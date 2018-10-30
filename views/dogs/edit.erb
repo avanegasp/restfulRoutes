@@ -1,0 +1,17 @@
+<h1>Vas a editar a <%= @dog.name %></h1>
+
+<!--falta decirle al form que el verbo http es PATCH-->
+<form action="/dogs/<%= @dog.id %>" method="post">
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="text" name="nombre">
+  <input type="submit" value="editar">
+</form>
+
+
+<!--
+pet CRUD
+utilizar todas las rutas RESTFUL
+tiene 7 métodos
+la clase Pet tiene un name
+la aplicación puede crear, actualizar
+ver, eliminar a una mascota -->
